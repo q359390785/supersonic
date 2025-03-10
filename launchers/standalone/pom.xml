@@ -49,6 +49,12 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>com.yoyosys</groupId>-->
+<!--            <artifactId>datafuse-sdk</artifactId>-->
+<!--            <version>${datafuse.sdk.version}</version>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
@@ -113,6 +119,10 @@
                     <artifactId>*</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
 

@@ -35,6 +35,7 @@ public class SqlDialectFactory {
         sqlDialectMap.put(EngineType.CLICKHOUSE, new SemanticSqlDialect(DEFAULT_CONTEXT));
         sqlDialectMap.put(EngineType.MYSQL, new SemanticSqlDialect(DEFAULT_CONTEXT));
         sqlDialectMap.put(EngineType.H2, new SemanticSqlDialect(DEFAULT_CONTEXT));
+        sqlDialectMap.put(EngineType.DATAFUSE, new SemanticSqlDialect(DEFAULT_CONTEXT));
         sqlDialectMap.put(EngineType.POSTGRESQL, new SemanticSqlDialect(POSTGRESQL_CONTEXT));
     }
 

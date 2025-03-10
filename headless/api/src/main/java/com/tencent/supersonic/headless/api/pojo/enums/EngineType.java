@@ -10,6 +10,7 @@ public enum EngineType {
     KAFKA(4, "kafka"),
     H2(5, "h2"),
     POSTGRESQL(6, "postgresql"),
+    DATAFUSE(11, "datafuse"),
     OTHER(7, "other");
 
 

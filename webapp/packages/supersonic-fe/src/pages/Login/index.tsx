@@ -15,6 +15,7 @@ import { queryCurrentUser } from '@/services/user';
 import { history, useModel } from 'umi';
 import CryptoJS from 'crypto-js';
 import { encryptPassword } from '@/utils/utils';
+import logoPng from "@/assets/image/png.png";
 
 const { Item } = Form;
 const LoginPage: React.FC = () => {
@@ -90,13 +91,14 @@ const LoginPage: React.FC = () => {
               <div className={styles.loginMain}>
                 <h3 className={styles.title}>
                   <Space>
-                    <S2Icon
-                      icon={ICON.iconlogobiaoshi}
-                      size={30}
-                      color="#296DF3"
-                      style={{ display: 'inline-block', marginTop: 8 }}
-                    />
-                    <div>SuperSonic</div>
+                    {/*<S2Icon*/}
+                    {/*  icon={ICON.iconlogobiaoshi}*/}
+                    {/*  size={30}*/}
+                    {/*  color="#296DF3"*/}
+                    {/*  style={{ display: 'inline-block', marginTop: 8 }}*/}
+                    {/*/>*/}
+                    <img src={logoPng} style={{width: '40px'}}></img>
+                    <div>Data Discovery</div>
                   </Space>
                 </h3>
                 <Item name="name" rules={[{ required: true }]} label="">

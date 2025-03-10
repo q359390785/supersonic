@@ -14,6 +14,7 @@ import { configProviderTheme } from '../config/themeSettings';
 export { request } from './services/request';
 import { ROUTE_AUTH_CODES } from '../config/routes';
 import AppPage from './pages/index';
+import logoPng from '../src/assets/image/png.png'
 
 const replaceRoute = '/';
 
@@ -106,11 +107,11 @@ export async function getInitialState(): Promise<{
 // }
 
 export function onRouteChange() {
-  const title = window.document.title.split('-SuperSonic')[0];
-  if (!title.includes('SuperSonic')) {
-    window.document.title = `${title}-SuperSonic`;
+  const title = window.document.title.split('-Data Discovery')[0];
+  if (!title.includes('Data Discovery')) {
+    window.document.title = `${title}-Data Discovery`;
   } else {
-    window.document.title = 'SuperSonic';
+    window.document.title = 'Data Discovery';
   }
 }
 
@@ -123,14 +124,15 @@ export const layout: RunTimeLayoutConfig = (params) => {
     },
     logo: (
       <Space>
-        <S2Icon
-          icon={ICON.iconlogobiaoshi}
-          size={30}
-          color="#1672fa"
-          style={{ display: 'inline-block', marginTop: 8 }}
-        />
+        {/*<S2Icon*/}
+        {/*  icon={ICON.iconlogobiaoshi}*/}
+        {/*  size={30}*/}
+        {/*  color="#1672fa"*/}
+        {/*  style={{ display: 'inline-block', marginTop: 8 }}*/}
+        {/*/>*/}
+        <img src={logoPng } style={{width:'40px'}}></img>
         <div className="logo" style={{ position: 'relative', top: '-2px' }}>
-          SuperSonic
+          Data Discovery
         </div>
       </Space>
     ),

@@ -7,7 +7,7 @@ server:
 
 spring:
   profiles:
-    active: local
+    active: prd
   application:
     name: chat
   config:
@@ -46,3 +46,6 @@ swagger:
     email:
     url: ''
   version: 3.0
+
+datafuse:
+  plugin_dir: /Users/shenzhongling/code/yoyosys/src/java/datacell_dap/datafuse_drivers/jdbc
